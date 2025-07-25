@@ -47,6 +47,8 @@ export default [
     rules: {
       // Allow single word vue component names
       "vue/multi-word-component-names": "off",
+      // Allow v-html usage in Vue templates
+      "vue/no-v-html": "warn",
 
       "no-unused-vars": "off",
       // Add rules for unused-imports
@@ -57,8 +59,13 @@ export default [
           vars: "all",
           varsIgnorePattern: "^_", // Ignore variables starting with _
           args: "after-used",
-          argsIgnorePattern: "^_", // Ignore arguments starting with _
         },
+      ],
+      "@typescript-eslint/no-unused-vars": [
+          "error",
+          {
+            argsIgnorePattern: "^_",
+          },
       ],
     },
   },
