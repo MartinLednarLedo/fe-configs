@@ -1,3 +1,8 @@
+## [3.0.3] - 2025-07-25
+### Features
+- changed v-html as warning
+- added argsIgnorePattern that allows arguments starting with _
+
 ## [3.0.2] - 2025-07-16
 ### Fixes
 - fixed eslintrc.js
