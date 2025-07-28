@@ -53,17 +53,20 @@ export default [
       "no-unused-vars": "off",
       // Add rules for unused-imports
       "unused-imports/no-unused-imports": "error",
+
       "unused-imports/no-unused-vars": [
         "error",
-        {
-          vars: "all",
-          varsIgnorePattern: "^_", // Ignore variables starting with _
-          args: "after-used",
-        },
+          {
+            vars: "all",
+            args: "all",
+            argsIgnorePattern: "^_",
+          },
       ],
       "@typescript-eslint/no-unused-vars": [
           "error",
           {
+            vars: "all",
+            args: "all",
             argsIgnorePattern: "^_",
           },
       ],
